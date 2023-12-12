@@ -1,0 +1,215 @@
+﻿@{
+    ViewData["Title"] = "Example";
+}
+<!--Комментарий-->
+<h1>Заголовок 1</h1>
+<h2>Заголовок 2</h2>
+<h3>Заголовок 3</h3>
+<h4>Заголовок 4</h4>
+<a name="example5"></a>
+<h5>Заголовок 5</h5>
+<a name="example"></a>
+<h6>Заголовок 6</h6>
+<p>Этот текст<em> будет</em> <u>aбзацем</u></p>
+<p>Этот текст<strong> будет</strong> <strike>aбзацем</strike></p>
+<p>
+    <abbr title="example">HTML</abbr>
+</p>
+<address>США, штат Вашингтон</address>
+<p>
+    Этот
+    <strong>
+        <u>
+            <strike>
+                <em>текст пробный</em>
+            </strike>
+        </u>
+    </strong>
+</p>
+<small>Этот текст маленький</small>
+<big>этот текст большой</big>
+<pre> djngjdkf     dfjn
+dx,fndfnb                   </pre>
+<blockquote cite="<!--сайт-->">
+    <p><!--Цитаты--> </p>
+</blockquote>
+<p>Станислав Лец утверждал:<q>Чаще всего...</q></p>
+
+<hr/> <br/>
+<h3>Списки</h3>
+<ol type="1" start="4" reversed="reversed">
+    <li>Первый пункт</li>
+    <li>Вторщй пункт</li>
+    <li>..</li>
+</ol>
+<ul type="circle">
+    <li>Первый пункт</li>
+    <li>Вторщй пункт</li>
+    <li>..</li>
+</ul>
+<dir>
+    <li>Первый пункт</li>
+    <li>Вторщй пункт</li>
+    <li>..</li>
+</dir>
+
+<hr/> <br/>
+
+<h3>Ссылки в HTML</h3>
+
+<a href="http://www.google.com" target="_blank" title="Переход на гугл(подсказка)">Главная</a>
+<a href="#example">Переход на заголовок 6</a> <!--Переход без перезагрузкой страницы-->
+<a href="http://localhost:5176/#example5">Переход на заголовок 5</a> <!--Переход с перезагрузкой страницы-->
+<a href="mailto:kudelko_marina@bk.ru">Email</a> <!--Переход на почту-->
+
+<hr/> <br/>
+
+<h3>Изображения в HTML</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Djerba_palmier-dattier.jpg" width="50%" height="50%" title="Это пальма" alt="Пальма"/>
+
+<hr/> <br/>
+
+
+<div style="position: absolute; left:1000px; top: 1500px; font-family: Verdana;  font-size: 10pt; border-style:groove;border-width: 10px;
+border-color: blue; padding:4px ">
+    проверка
+    <span style="font-style: italic ; color: red"> какого-то текста </span> еще<br/> и что-то еще
+</div>
+
+<hr/> <br/>
+
+<h3>Поля ввода</h3>
+<form>
+    <label for="name">Введите ваше имя: </label>
+    <input type="text" placeholder="Поиск..." name="name" id="name" title="Подсказка"maxlength="10"/>
+    <br/><br/>
+    <label for="date">День рождения: </label><input type="date" id="date" name="date"/>
+    <br/><br/>
+    <label for="URl">URl: </label><input type="url" id="URl"/>
+    <br/><br/>
+    <input type="range"/>
+    <br/><br/>
+    <label for="male">Мужской </label><input type="radio" name="state" id="male"/>
+    <label for="female">Женский </label><input type="radio" name="state" id="female"/>
+    <br/><br/>
+    <label for="pass">Введите пароль: </label><input type="password" id="pass" name="password"/>
+    <br/><br/>
+    <label for="num">Введите количество: </label><input type="number" id="num" name="num"/>
+    <br/><br/>
+    <label for="email">Введите email: </label><input type="email" id="email" name="email" maxlength="20"/>
+    <br/><br/>
+    <label for="color">Выберите цвет: </label><input type="color" id="color" name="color"/>
+    <br/><br/>
+    <label for="agree">Со всем осогласен </label><input type="checkbox" id="agree" name="agree"/>
+    <label for="agree">Со всем осогласен </label><input type="checkbox" id="agree" name="agree"/>
+    <label for="agree">Со всем осогласен </label><input type="checkbox" id="agree" name="agree"/>
+    <label for="agree">Со всем осогласен </label><input type="checkbox" id="agree" name="agree"/>
+    <label for="agree">Со всем осогласен </label><input type="checkbox" id="agree" name="agree"/>
+    <br/><br/>
+    <input type="button" value="Oтправить Button"/> <!--без перезагрузки страницы-->
+    <br/><br/>
+    <input type="submit" value="Oтправить Submit"/> <!--с перезагрузкой страницы-->
+    <br/><br/>
+    <input type="reset" value="Очистить"/>
+</form>
+
+<h3>"Textarea + button"</h3>
+<form >
+    <p>
+        <b>Введите Ваш отзыв</b>
+    </p>
+    <textarea rows="10" cols="45" name="text"></textarea>
+    <button>Отправить</button>
+</form>
+<br/><br/>
+
+
+<h3>Select +Option</h3>
+<select>
+    <option>1 ...</option>
+    <option>2 ...</option>
+    <option selected="selected"> 3 ...</option>
+    <option>4 ...</option>
+    <option>5 ...</option>
+</select>
+<br/><br/>
+<form>
+    <select size="5" multiple="multiple" name="hero[]">
+        <option disabled="disabled">Выберите героя</option>
+        <option value="Чебурашка">Чебурашка</option>
+        <option selected="selected" value="Крокодил Гена"> Крокодил Гена</option>
+        <option value="Крыса Лариса">Крыса Лариса</option>
+        <option value="Шапокляк">Шапокляк</option>
+    </select>
+    <br/><br/>
+    <select>
+        <option disabled="disabled">Выберите героя</option>
+        <option value="Чебурашка">Чебурашка</option>
+        <option selected="selected" value="Крокодил Гена"> Крокодил Гена</option>
+        <option value="Крыса Лариса">Крыса Лариса</option>
+        <option value="Шапокляк">Шапокляк</option>
+    </select>
+    <input type="submit" value="Отправить"/>
+</form>
+<br/><br/>
+
+
+<h3>HTML 5</h3>
+<header>Шапка</header>
+<menu>
+    <li>Русская кухня. Уха</li>
+    <li>Итальянская кухня. Паста</li>
+    <li>Французская кухня. Круассан</li>
+</menu>
+
+<article>
+    <!--Статья, новость, пост..-->
+    <p>Спокойная мебелодия</p>
+    <audio controls="controls" @*autoplay="autoplay"*@ loop="loop">
+        <source src=""/>
+    </audio>
+    <video controls="controls">
+        <source src=""/>
+    </video>
+</article>
+
+<aside>Боковая панель</aside>
+<footer>Низ сайта</footer>
+<br/><br/>
+
+
+<h3>Теги sub и sup</h3>
+H<sub>2</sub>O
+4<sup>2</sup>
+<br/><br/>
+
+<h3>Специальные HTML5 теги</h3>
+<details>
+    <summary>Информация об авторе</summary>
+    <p>Бендер Родригез</p>
+</details>
+<br/>
+
+Проверка 123 <mark>выделено</mark> 123 проверка
+<br/><br/>
+<ruby>
+    1254 <rt>34</rt>
+    Марина <rt>мама</rt>
+</ruby>
+<br/><br/>
+<progress max="100" value="25">
+    Загружено на
+    <span id="value">25</span>
+</progress>
+<br/> <br/>
+<form oninput="result.value=(cm.value/2.54).toFixed(2) ">
+    <p>
+        Введите длину в сантиметрах:
+        <input type="number" name="cm"/>
+    </p>
+    <p>
+        Длина в дюймах:
+        <output name="result">0</output>
+    </p>
+</form>
+<br/><br/>

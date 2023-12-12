@@ -1,0 +1,359 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>JavaScript</title>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">HTTP5</a>
+    </li>
+    <title>Изучение библиотеки JQuery</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    @*<style>
+        .div_1{
+        background-color: rgba(49,255,195,0.99);
+        }
+        .div_2{
+        background-color: rgba(254,197,255,0.99);
+        }
+    </style>*@
+   <style>
+            .block{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            
+            }
+        </style>
+
+    <script type="text/javascript">
+       /*let testForClass =$('div.testClass')                //если обращаемся к классуБ то не забываемБ что это массив
+        for (let i=0;i<testForClass.length;i++)
+        {
+            testForClass.get(i).style.color="red";
+        }
+        setTimeout("$('p.testClass').get(0).style.color='green'",2000);
+            
+        let testForDiv=$("div");
+        alert(testForDiv.length);
+            
+        let img=$("img[title]");
+         alert(img.length);
+         
+         
+      let  link=$("#menu li a:first") ;
+       alert(link.html());
+         
+         link=$("#menu li a:eq(2)") ;
+            alert(link.html());*/
+            
+            
+        /*  function valid() {
+              let state=$("input[name='sex']:checked").val();
+              $('#message').show();
+              
+              if (!state) return $("#message").
+              html("<font style='color:red'>Укажите Ваш пол</font><br>");
+              
+              $("#massage").hide();
+             // alert(state);
+              if (state==="male"){$("#img").show();}
+              
+            let test=  $("div,p") ;
+              
+          }*/
+          
+                       
+           /* $(":not(img[alt])").attr("alt","jQuery"); /!* тоже самое $("img").not("img[alt]");*!/
+           let elements=$("img");
+           let text="";
+           for (let i= 0;i<elements.length;i++)
+                {text+=elements[i].alt+"\n"}
+            
+            alert(text);*/
+            
+            
+        /*let div= prompt("1 или 2?")  ;
+       while (div != 1 && div!= 2){ 
+            alert("Пожалуйста, введите число 1 или 2");
+            div= prompt("1 или 2?");
+        }  
+        $("#div").attr("class","div_"+div);
+       alert($("#div").get(0).className);*/
+       
+       /*$("#div_block").css("font-size","25px");
+        $("#div_block").css("color","red");
+        $("#div_block").css("background-color",function (){return "blue";});
+        $("#div_block").css("width","250px");
+        
+        $("#div_block").css("height",function (){
+            let height=prompt("Введите высоту:");
+            return height+"px";
+        });*/
+       
+       /*alert($("#div_block").html());  //выводит с тэгами
+       alert($("#div_block").text());   //выводит бе тэгов, только текст
+       $("p").html("<p> Новый абзац</p>");    //можно заменять часть кода */
+       
+       /*let  block=$("#div_block").clone();
+       block.html("<p>Новый абзац</p>");
+       block.css("font-size",'20px');
+       block.css("width",'200px');
+       $("body").append(block);*/
+       
+       
+      /* $("div").append("<span>простой текст</span>");
+       $("img").appendTo($("#div_block1"));
+       $("a").wrap("<p class='hrefs'></p>" );
+       $("#div_block1").remove();
+       $("#div_block2").empty();
+       $("#div_block1").append("<span>простой текст</span>");*/
+      
+      /*$("<p>appendTo</p>").appendTo("div");  // в конец самого  тега
+      $("<p>prependToт</p>").prependTo("div");   //в начало самого  тега
+      $("<p>insertBefore</p>").insertBefore("div");   //в начало до тега (div)
+      $("<p>insertAfter</p>").insertAfter("div");    // в конец  после тега (div)*/
+        
+        /*function val1(){
+                let textEx=$("#textEx").val();
+            alert(textEx);
+            }
+            
+        function val2(){
+                 let textEx=$("#passwordEx").val();
+            alert(textEx);
+            }*/
+            
+         /* function inSize (event){
+             
+          let width = Number(event.target.style.width.substring(0,event.target.style.width.length-2));         // substring- обрезает строку по координатам, 
+          
+             event.target.style.width=(width+5) +"px";  
+            /!* $(event.target).unbind();  *!/                                                // Number преобразование строки в число
+          
+          $("<p> Координаты мышки при нажатии:x -"  + event.screenX +", y - "+event.screenY +"</p>")
+          .insertAfter("div:last");
+          
+               
+          } 
+            
+            
+      $(document).ready(function (){
+          $("div").bind("click",inSize); //bind - передает event рабтает с уже созданными тэгами,кот были созданы сразу после загрузки страницы
+          $(document).on("click","p",function (){alert("test")});    // on - работает с тэгамиБ созданами после загрузки страницы
+          
+      });*/
+        
+      /*  $(document).ready(function  (){
+            
+            $(document).on("click","#add_comment",function (){
+                let form=$("form[name='formCom']");
+                form.css("display","block");
+                $("#add_comment").replaceWith(form);
+            })
+        });
+        $(document).on("click","input[name='send']", function (){
+            
+            let comment=$("textarea[name='comment']").val();
+            alert("Подождите, идет загрузка комментария...");
+            $("<p>"+comment+"</p>").appendTo("#comments");
+            
+            
+        });
+        $(document).ready(function  (){
+                    
+        function hideComments() {
+           /!*$("#comments").hide*!/
+          /!* $("#comments").slideUp*!/
+           $("#comments").fadeOut
+           (1000,function (){
+                $("#hide").hide();
+                $("#show").show();
+           
+           });
+        }
+        function showComments() {
+            /!*$("#comments").show*!/
+           /!* $("#comments").slideDown*!/
+            $("#comments").fadeIn
+            (1000,function (){
+                 $("#hide").show();
+                 $("#show").hide();
+            });
+                 
+        }
+        $("#hide").bind ("click",hideComments);
+         
+         $("#show").bind ("click",showComments);
+        });
+      */
+     /*$(document).ready(function (){
+         $("#imgSome").bind("click",function (event){
+             
+            $(event.target).parent().css("text-align","center");
+             $(event.target).animate({
+             width:$(event.target).width()*3,
+             height:$(event.target).height()*3
+             }, 2000)
+             
+         });  
+               
+     });*/
+     
+     $(document).ready(function (){  
+         
+        $("#add_block") .click(function (){
+            let randName=GetNumber(1,700);
+            $('#blocks').prepend("<div class='block "+randName+"'>"+randName+"</div>");
+            
+            $('.'+randName).css("background","#"+GetNumber(0,9)+GetNumber(0,9)
+            +GetNumber(0,9)+GetNumber(0,9)+GetNumber(0,9)+GetNumber(0,9));
+            
+        });
+         
+         function GetNumber(min,max){ 
+             return Math.floor(Math.random()*(max-min+1))+min;
+         }
+         
+                    
+     });
+     
+        
+    </script>
+
+</head>
+<body>
+@*<div id="test" onclick="$('#test').hide()">Test</div>
+
+<script type="text/javascript">
+    let str="         str           ";
+    alert(str);
+    alert($.trim(str));
+    </script>
+
+<div id="test1">Test1</div>
+
+<script type="text/javascript">
+ let test1=$('#test1').html();
+ alert(test1);
+    </script>
+
+
+<div class="testClass">TestClass 1</div>
+<div class="testClass">TestClass 2</div>
+<p class="testClass">TestClass 3</p>
+<p class="testClass">TestClass 4</p>
+<img src="1.jpg" alt="1"/>
+<img src="2.jpg" alt="2" title="2"/>
+
+<ul id="menu">
+
+    <li>
+        <a href="">Ссылка 1</a>
+    </li>
+    <li>
+        <a href="">Ссылка 2</a>
+    </li>
+    <li>
+        <a href="">Ссылка 3</a>
+    </li>
+    <li>
+        <a href="">Ссылка 4</a>
+    </li>
+    <li>
+        <a href="">Ссылка 5</a>
+    </li>
+
+</ul>
+<a href="">Ссылка 6</a>
+ <br/><br/>*@
+
+@*
+<form name="name" id="form">
+    <label for="female">Женский</label>
+    <input type="radio" id="female" name="sex" value="female"/>
+    <label for="male">Мужской</label>
+    <input type="radio" id="male" name="sex" value="male"/>
+    <br/><br/>
+    <span id="message"></span>
+    <br/><br/>
+    <input type="button" onclick="return valid()" id="done" value="Готово"/>
+</form>
+<img src="3.jpg" style="display:none" id="img" alt="5"/>
+*@
+
+
+@*<img src="1.jpg" alt="Изображение" title="Изображение"/> <br/>
+<img src="2.jpg" $1$title="Изображение"#1#/><br/>
+<img src="3.jpg" $1$title="Изображение"#1#/> <br/>
+<img src="4.jpg" alt="Изображение" title="Изображение"/> <br/>*@
+
+
+@*<div id="div">Text</div>*@
+
+
+
+@*<div id="div_block"  style="background-color: rgba(255,225,184,0.99)">
+    Блок
+    <p>Абзац</p>
+</div>*@
+
+
+
+
+@*<div id="div_block1">
+    <p>Абзац</p>
+</div>
+<div id="div_block2"></div>
+<img src="1.jpg" alt="из"/>
+<img src="2.jpg" alt="из"/>
+<img src="3.jpg" alt="из"/><br/>
+<a href="#">1</a>
+<a href="#">2</a>*@
+
+@*<div>Блок</div>*@
+
+
+@*
+<input type="text" name="textEx" id="textEx"/>
+<input type="button" onclick="return val1()" value="done"/>
+<input type="password" name="passwordEx" id="passwordEx"/>
+<input type="button" onclick="return val2()" value="done"/>*@
+
+@*<div style="height: 50px; width: 50px; background-color: rgba(255,215,161,0.99) "> </div>
+<div style="height: 50px; width: 50px; background-color: rgba(178,255,128,0.99) "> </div>
+<div style="height: 50px; width: 50px; background-color: rgba(255,94,142,0.99) "> </div>*@
+
+
+@*<a href="#" id="hide" onclick="return false">Скрыть комментарий</a>
+<a href="#" id="show" style="display: none" onclick="return false">Показать комментарий</a>
+<div id="comments">
+    <p>Комментарий #1</p>
+    <p>Комментарий #2</p>
+    <p>Комментарий #3</p>
+</div>
+<form name="formCom" id="formCom" action="" method="post" style="display: none" onsubmit="return false">
+    <textarea id="textarea" name="comment" cols="30" rows="10"></textarea> <br/>
+    <input type="submit" name="send" value="Добавить комментарий" id="done"/>
+</form>
+<a href="#" onclick="return false" id="add_comment">Добавить комментарий</a>*@
+
+
+@*<p id="some">
+    <img src="https://cud.news/wp-content/uploads/2022/04/cud_news-panel.jpg" 
+         alt="Избр" width="200" title="Избр" id="imgSome"/>
+</p>*@
+
+<button id="add_block">Добавить блок</button>
+<div id="blocks"></div>
+</body>
+</html>

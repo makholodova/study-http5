@@ -1,0 +1,94 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>HTML+CSS</title>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">HTTP5</a>
+    </li>
+    <link href="~/css/new.css" rel="stylesheet" type="text/css"/>
+    @*<style>
+       b {color: rgba(133,255,58,0.99)}
+    </style>*@
+</head>
+<body>
+<p id="text-in-p">
+    Текст, в своем роде, состоит из <i class="main-text">некоторого количества</i> предложений. @* class- устанавливается ко многим тегам*@
+    Одно предложение, даже <b class="main-text">очень</b> распространённое, сложное, текстом @* id- устанавливается только к одному тегу*@
+    назвать нельзя, поскольку текст можно разделить на самостоятельные
+    предложения, а части предложения сочетаются по <b id="bold-text-in-b">законам</b> синтаксиса
+    сложного предложения, но <b>не текста</b>.
+</p>
+<div>
+    <p>
+        Текст, в своем роде, состоит из <i >некоторого количества</i> предложений.
+        Одно предложение, даже <b >очень</b> распространённое, сложное, текстом
+        назвать нельзя, поскольку текст можно разделить на самостоятельные
+        предложения, а части предложения сочетаются по <b >законам</b> синтаксиса
+        сложного предложения, но <b>не текста</b>.
+    </p>
+
+    <a href="#" class="main-link">Ссылка</a>
+
+    <p class="text">Simple</p>
+    <p class="text" title="SOME TEXT"></p>
+
+
+    <div id="some_id">Some text</div>
+    <br/>
+    <input type="text" placeholder="Введите текст" required/>
+
+    <p class="main-link">
+        Текст, в своем роде, состоит из <i >некоторого количества</i> предложений.
+        Одно предложение, даже <b >очень</b> распространённое, сложное, текстом
+        назвать нельзя, поскольку текст можно разделить на самостоятельные
+        предложения, а части предложения сочетаются по <b >законам</b> синтаксиса
+        сложного предложения, но <b>не текста</b>.
+    </p>
+
+    <div id="first"></div>
+    <div id="second"></div>
+</div>
+
+<p class="text_example">
+    Текст, в своем роде, состоит из <i >некоторого количества</i> предложений.
+    Одно предложение, даже <b >очень</b> распространённое, сложное, текстом
+    назвать нельзя, поскольку текст можно разделить на самостоятельные
+    предложения, а части предложения сочетаются по <b >законам</b> синтаксиса
+    сложного предложения, но <b>не текста</b>.
+</p>
+<br/>
+
+<div class="block">Example</div>
+<span class="block">Example</span>
+
+<br/><br/><br/>
+
+<div id="first_1" class="block_new"></div>
+<div id="second_2" class="block_new"></div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<div id="some_block">+</div>
+<div id="header">Шапка</div>
+<ul id="nav">
+    <li>Главная</li>
+    <li>Про нас</li>
+    <li>Контакты</li>
+</ul>
+
+
+<div id="main">Основная часть</div>
+<div id="aside">Боковая часть</div>
+<div id="footer">Футер</div>
+
+</body>
+</html>
